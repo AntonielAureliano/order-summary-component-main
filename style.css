@@ -4,6 +4,7 @@
   --primary-pale-blue: hsl(225, 100%, 94%);
   --primary-bright-blue: hsl(245, 75%, 52%);
   --primary-link-blue: hsl(228, 45%, 44%);
+  --primary-white: hsl(0, 0%, 100%);
 
   --neutral-very-pale-blue: hsl(225, 100%, 98%);
   --neutral-desaturated-blue: hsl(224, 23%, 55%);
@@ -17,14 +18,36 @@ h1,
 p,
 body {
   margin: 0;
+  /*background-image: url("./images/pattern-background-desktop.svg");*/
 }
 
 body {
   font-family: var(--font-family-defaul);
 }
 
+/*Container*/
+.container {
+  background-color: var(--primary-white);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 450px;
+  margin: 100px auto;
+}
+
+.title {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.paragraph {
+  margin: 0 auto;
+  max-width: 30ch;
+  text-align: center;
+}
+
 .attribution {
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-align: center;
 }
 .attribution a {
