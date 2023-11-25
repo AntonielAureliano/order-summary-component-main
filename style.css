@@ -46,6 +46,17 @@ body {
   text-align: center;
 }
 
+/*Plan*/
+.plan {
+  background-color: var(--neutral-very-pale-blue);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.plan-description::before {
+  content: url("./images/icon-music.svg");
+}
+
 .attribution {
   font-size: 0.6875rem;
   text-align: center;
