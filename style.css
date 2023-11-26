@@ -25,6 +25,10 @@ body {
   font-family: var(--font-family-defaul);
 }
 
+.margin-all {
+  margin: 0 40px;
+}
+
 /*Container*/
 .container {
   background-color: var(--primary-white);
@@ -36,11 +40,15 @@ body {
 }
 
 .title {
+  color: var(--neutral-dark-blue);
+  font-size: 1.75rem;
   margin-top: 10px;
   text-align: center;
 }
 
 .paragraph {
+  color: var(--neutral-desaturated-blue);
+  line-height: 1.6;
   margin: 0 auto;
   max-width: 30ch;
   text-align: center;
@@ -48,13 +56,36 @@ body {
 
 /*Plan*/
 .plan {
+  align-items: center;
   background-color: var(--neutral-very-pale-blue);
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   padding: 20px;
 }
+
+.plan-description {
+  margin-left: 60px;
+  position: relative;
+}
 .plan-description::before {
   content: url("./images/icon-music.svg");
+  left: -60px;
+  position: absolute;
+}
+
+.plan-description p {
+  color: var(--neutral-dark-blue);
+  font-weight: 700;
+}
+
+.plan-description span {
+  color: var(--neutral-desaturated-blue);
+}
+
+.plan a {
+  color: var(--primary-bright-blue);
+  font-weight: 700;
 }
 
 .attribution {
