@@ -5,6 +5,7 @@
   --primary-bright-blue: hsl(245, 75%, 52%);
   --primary-link-blue: hsl(228, 45%, 44%);
   --primary-white: hsl(0, 0%, 100%);
+  --primary-light-purple: hsl(245, 83%, 68%);
 
   --neutral-very-pale-blue: hsl(225, 100%, 98%);
   --neutral-desaturated-blue: hsl(224, 23%, 55%);
@@ -92,17 +93,16 @@ body {
 
 .plan a {
   color: var(--primary-bright-blue);
+  font-size: 0.875rem;
   font-weight: 700;
 }
 
-.attribution {
-  font-size: 0.6875rem;
-  text-align: center;
-}
-.attribution a {
-  color: var(--primary-link-blue);
+.plan a:hover {
+  color: var(--primary-light-purple);
+  text-decoration: none;
 }
 
+/*Bottom*/
 .bottom {
   display: flex;
   flex-direction: column;
@@ -110,7 +110,15 @@ body {
 }
 
 .bottom a {
+  color: var(--neutral-desaturated-blue);
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
   text-decoration: none;
+}
+
+.bottom a:hover {
+  color: var(--neutral-dark-blue);
 }
 
 .bottom a:first-child {
@@ -122,9 +130,15 @@ body {
   text-align: center;
 }
 
-.bottom a {
-  color: var(--neutral-desaturated-blue);
-  font-weight: 700;
-  margin-bottom: 30px;
+.bottom a:first-child:hover {
+  background-color: var(--primary-light-purple);
+}
+
+/*Attribution*/
+.attribution {
+  font-size: 0.6875rem;
   text-align: center;
+}
+.attribution a {
+  color: var(--primary-link-blue);
 }
