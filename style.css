@@ -13,45 +13,51 @@
   --font-family-defaul: "Red Hat Display", sans-serif;
 }
 
-a,
-h1,
-p,
-body {
+* {
   margin: 0;
-  /*background-image: url("./images/pattern-background-desktop.svg");*/
 }
 
 body {
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-color: var(--primary-pale-blue);
+  background-repeat: no-repeat;
   font-family: var(--font-family-defaul);
 }
 
-.margin-all {
+.margin-default {
   margin: 0 40px;
 }
 
 /*Container*/
 .container {
-  background-color: var(--primary-white);
+  background: var(--primary-white);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  max-width: 450px;
+  gap: 30px;
+  max-width: 442px;
   margin: 100px auto;
 }
 
-.title {
+/*Desc*/
+.desc h1 {
   color: var(--neutral-dark-blue);
   font-size: 1.75rem;
-  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
-.paragraph {
+.desc p {
   color: var(--neutral-desaturated-blue);
   line-height: 1.6;
   margin: 0 auto;
   max-width: 30ch;
   text-align: center;
+}
+
+.image img {
+  border-radius: 10px 10px 0 0;
+  max-width: 442px;
 }
 
 /*Plan*/
@@ -76,6 +82,7 @@ body {
 
 .plan-description p {
   color: var(--neutral-dark-blue);
+  font-size: 1.0625rem;
   font-weight: 700;
 }
 
@@ -94,4 +101,30 @@ body {
 }
 .attribution a {
   color: var(--primary-link-blue);
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.bottom a {
+  text-decoration: none;
+}
+
+.bottom a:first-child {
+  background-color: var(--primary-bright-blue);
+  border-radius: 10px;
+  color: var(--primary-white);
+  font-weight: 700;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.bottom a {
+  color: var(--neutral-desaturated-blue);
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
 }
