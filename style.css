@@ -29,6 +29,16 @@ body {
   margin: 0 40px;
 }
 
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url("./images/pattern-background-mobile.svg");
+  }
+
+  .margin-default {
+    margin: 0 20px;
+  }
+}
+
 /*Container*/
 .container {
   background: var(--primary-white);
@@ -38,6 +48,12 @@ body {
   gap: 30px;
   max-width: 442px;
   margin: 100px auto;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    margin: 80px 20px;
+  }
 }
 
 /*Desc*/
@@ -58,7 +74,16 @@ body {
 
 .image img {
   border-radius: 10px 10px 0 0;
-  max-width: 442px;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+  .desc p {
+    max-width: 25ch;
+  }
+  .image img {
+    max-width: 100%;
+  }
 }
 
 /*Plan*/
@@ -124,14 +149,22 @@ body {
 .bottom a:first-child {
   background-color: var(--primary-bright-blue);
   border-radius: 10px;
+  box-shadow: 0 5px 10px 10px var(--primary-pale-blue);
   color: var(--primary-white);
   font-weight: 700;
   padding: 15px 0;
   text-align: center;
+  transition: 0.1s;
 }
 
 .bottom a:first-child:hover {
   background-color: var(--primary-light-purple);
+}
+
+@media screen and (max-width: 375px) {
+  .bottom a {
+    margin-bottom: 20px;
+  }
 }
 
 /*Attribution*/
