@@ -25,6 +25,7 @@ body {
   background-image: url("./images/pattern-background-desktop.svg");
   background-color: var(--primary-pale-blue);
   background-repeat: no-repeat;
+  background-size: contain;
   font-family: var(--font-family-defaul);
 }
 
@@ -72,7 +73,7 @@ body {
   color: var(--neutral-desaturated-blue);
   line-height: 1.6;
   margin: 0 auto;
-  max-width: 30ch;
+  max-width: 25ch;
   text-align: center;
 }
 
