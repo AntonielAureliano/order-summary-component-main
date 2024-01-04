@@ -46,7 +46,7 @@ body {
 /*Container*/
 .container {
   background: var(--primary-white);
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 10px 20px 5px var(--secundary-very-light-blue);
   display: flex;
   flex-direction: column;
@@ -78,7 +78,7 @@ body {
 }
 
 .image img {
-  border-radius: 10px 10px 0 0;
+  border-radius: 20px 20px 0 0;
   max-width: 100%;
 }
 
