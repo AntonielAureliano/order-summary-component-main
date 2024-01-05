@@ -21,12 +21,17 @@
   margin: 0;
 }
 
-body {
+body {  
   background-image: url("./images/pattern-background-desktop.svg");
   background-color: var(--primary-pale-blue);
   background-repeat: no-repeat;
   background-size: contain;
-  font-family: var(--font-family-defaul);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family-defaul);  
+  justify-content: center;
+  min-height: 100vh;
+  place-items: center;
 }
 
 .margin-default {
@@ -52,7 +57,6 @@ body {
   flex-direction: column;
   gap: 30px;
   max-width: 442px;
-  margin: 100px auto;
 }
 
 @media screen and (max-width: 375px) {
@@ -175,6 +179,7 @@ body {
 /*Attribution*/
 .attribution {
   font-size: 0.6875rem;
+  margin-top: 30px;
   text-align: center;
 }
 .attribution a {
